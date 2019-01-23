@@ -19,8 +19,8 @@
 		- Core velocity. Units: um/h. (vc_dim)
 		- Proliferation coefficient. Units: 1/h. (p_coef_dim)
 		- Source coefficient. Units: cell/(um^3 h). (s_dim)
-		- Max time after invasion begins: 5 days. Units: h. (t_max_inv_dim)
-		- Max time of benign stage. 10 days. Units: h. (t_max_benign_dim)
+		- Max. time after invasion begins: 5 days. Units: h. (t_max_inv_dim)
+		- Max. time of benign stage. 10 days. Units: h. (t_max_benign_dim)
 		- How often you save an output file. (save_step)
 
 --------------------------------------------------------------------------------------------

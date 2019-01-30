@@ -19,10 +19,11 @@ LibreGrowth code is organized in four main source files and two makefiles:
 
 	src/ScalarField.h
 		ScalarField class is defined in this file.
-		An instance of this class is used in main.h for depicting the tumor concentration.
+		An instance of this class is used in main.cpp for depicting the tumor concentration.
 
 	src/Mesh.h
 		Mesh class keeps information about geometry and domain discretization.
+		An instance of this class is used in the ScalarField class.
 
 	src/makefile
 		Compilation process is implemented in this file.

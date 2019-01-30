@@ -6,6 +6,32 @@
 
 
 --------------------------------------------------------------------------------------------
+-- Code file descriptions
+--------------------------------------------------------------------------------------------
+
+LibreGrowth code is organized in four main source files and two makefiles:
+
+	src/main.cpp
+		Main simulation process (finite difference iterative scheme) is implemented in this file.
+
+	src/Params.h
+		Model parameters (i.e. proliferation coefficient) are defined in this file.
+
+	src/ScalarField.h
+		ScalarField class is defined in this file.
+		An instance of this class is used in main.h for depicting the tumor concentration.
+
+	src/Mesh.h
+		Mesh class keeps information about geometry and domain discretization.
+
+	src/makefile
+		Compilation process is implemented in this file.
+
+	makefile
+		File cleaning, compilation, execution and loggin are implemented in this file.
+
+
+--------------------------------------------------------------------------------------------
 -- How to modify the code
 --------------------------------------------------------------------------------------------
 
@@ -22,6 +48,7 @@
 		- Max. time after invasion begins: 5 days. Units: h. (t_max_inv_dim)
 		- Max. time of benign stage. 10 days. Units: h. (t_max_benign_dim)
 		- How often you save an output file. (save_step)
+
 
 --------------------------------------------------------------------------------------------
 -- Compilation and execution instructions
@@ -52,3 +79,5 @@
 	Each file represents the tumor concentration of a particular time.
 
 	Output formats were selected to be compatible with the powerful visualization tool: Paraview.
+
+

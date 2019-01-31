@@ -4,6 +4,17 @@
 
 	Here we introduce LibreGrowth: a libre tumor growth code for simulating spheroid and rim development at benign and malignant stages over a conditioned media. It models each medium as a three-dimensional domain with an spatially variable diffusion coefficient, through the resolution of reaction-diffusion equations. The code is implemented in C++ for GNU/Linux systems, and optimized through the shared memory technology OpenMP. LibreGrowth provides a flexible implementation in order to facilitate upcoming studies concerning to the impact of the environment over the infiltration patterns. We expect that this kind of novel research tools help in the promotion of standard cancer therapies optimization, particularly in the context of personalized medicine.
 
+--------------------------------------------------------------------------------------------
+-- Scientific references
+--------------------------------------------------------------------------------------------
+
+LibreGrowth is the latest version of the codes used in our previous studies to model the growth and infiltration of a tumor.
+
+	E. Luján, D. Soto, M. S. Rosito, A. Soba, L. Guerra, J. C. Calvo, G. Marshall, C. Suárez, Microenvironmental influence on microtumour infiltration patterns: 3d- mathematical modelling supported by in vitro studies, Integrative Biology 10 (2018) 325–334. doi:10.1039/C8IB00049B.
+
+	E. Luján, D. Soto, M. S. Rosito, A. Soba, L. Guerra, G. Marshall, C. Suárez, Modelado matemático de un patrón de invasión tumoral a través de ecuaciones de reacción-difusión y fractales DLA (Diffusion Limited Aggregation), in: Mecánica Computacional, Vol. XXXV, 2017, pp. 387–400.
+
+	E. Luján, L. Guerra, A. Soba, N. Visacovsky, D. Ganda, J. C. Calvo, C. Suárez, Mathematical modelling of microtumour infiltration based on in vitro experiments, Integrative Biology 8 (2016) 879–885. doi:10.1039/C6IB00110F.
 
 --------------------------------------------------------------------------------------------
 -- Code file descriptions

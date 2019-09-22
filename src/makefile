@@ -1,39 +1,40 @@
 CC=g++
 
-# Standard compilation
-CFLAGS_STD=-c -Wall -Wextra -std=c++11
-LDFLAGS_STD=-std=c++11
+# Standar compilation
+CFLAGS_STD=-c -Wall -Wextra 
+LDFLAGS_STD=
 
-# Fast compilation
-CFLAGS_FAST=-c -Wall -Wextra -std=c++11 -Ofast
-LDFLAGS_FAST=-std=c++11
+# With O3 optimizations
+CFLAGS_OPT=-c -O3 -Wall -Wextra 
+LDFLAGS_OPT=
 
-# March compilation
-CFLAGS_MARCH=-c -Wall -Wextra -std=c++11 -march=native
-LDFLAGS_MARCH=-std=c++11
+# With Ofast optimizations
+CFLAGS_FAST=-c -Wall -Wextra  -Ofast
+LDFLAGS_FAST=
 
 # Debug compilation
-CFLAGS_DBG=-c -g -Wall -Wextra -std=c++11 
-LDFLAGS_DBG=-std=c++11
-
-# With optimizations
-CFLAGS_OPT=-c -O3 -Wall -Wextra -std=c++11 
-LDFLAGS_OPT=-std=c++11
+CFLAGS_DBG=-c -g -Wall -Wextra  
+LDFLAGS_DBG=
 
 # With OpenMP
-CFLAGS_OMP=-c -fopenmp -Wall -Wextra -std=c++11
-LDFLAGS_OMP= -fopenmp  -std=c++11
+CFLAGS_OMP=-c -fopenmp -Wall -Wextra 
+LDFLAGS_OMP= -fopenmp 
 
-# With optimizations and OpenMP
-CFLAGS_OPT_OMP=-c -O3 -ffast-math -ftree-vectorize -funroll-loops -fopenmp -Wall -Wextra -std=c++11 
-LDFLAGS_OPT_OMP= -fopenmp  -std=c++11
+# With Ofast optimizations and OpenMP
+CFLAGS_FAST_OMP=-c -Ofast -fopenmp -Wall -Wextra 
+LDFLAGS_FAST_OMP= -fopenmp 
 
+# With 03 optimizations and OpenMP
+CFLAGS_O3_OMP=-c -O3 -fopenmp -Wall -Wextra 
+LDFLAGS_O3_OMP= -fopenmp 
+
+COMP_TYPE=FAST_OMP
 
 CFLAGS  = ${CFLAGS_${COMP_TYPE}}
 LDFLAGS = ${LDFLAGS_${COMP_TYPE}}
 
 
-SOURCES=Mesh.h ScalarField.h Params.h main.cpp
+SOURCES=mesh.cpp scalar_field.cpp main.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=LibreGrowth
 

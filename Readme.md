@@ -18,12 +18,12 @@ LibreGrowth is the latest version of the codes used in our previous studies to m
 
 # Code file descriptions
 
-LibreGrowth code is organized in four main source files and two makefiles:
+LibreGrowth code is organized in the following source files:
 
 - src/main.cpp: Main simulation process (finite difference iterative scheme) is implemented in this file.
-- src/Params.h: Model parameters (i.e. proliferation coefficient) are defined in this file.
-- src/ScalarField.h: ScalarField class is defined in this file.An instance of this class is used in main.cpp for depicting the tumor concentration.
-- src/Mesh.h: Mesh class keeps information about geometry and domain discretization. An instance of this class is used in the ScalarField class.
+- src/par.h: Model parameters (i.e. proliferation coefficient) are defined in this file.
+- src/scalar_field.h and src/scalar_field.cpp: ScalarField class is defined in this file.An instance of this class is used in main.cpp for depicting the tumor concentration.
+- src/mesh.h and src/mesh.cpp: Mesh class keeps information about geometry and domain discretization. An instance of this class is used in the ScalarField class.
 - src/makefile: Compilation process is implemented in this file.
 - makefile: File cleaning, compilation, execution and loggin are implemented in this file.
 

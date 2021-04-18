@@ -4,7 +4,7 @@
 
 Here we introduce LibreGrowth: a libre tumor growth code for simulating spheroid and rim development at benign and malignant stages over a conditioned media. It models each medium as a three-dimensional domain with an spatially variable diffusion coefficient, through the resolution of reaction-diffusion equations. The code is implemented in C++ for GNU/Linux systems, and optimized through the shared memory technology OpenMP. LibreGrowth provides a flexible implementation in order to facilitate upcoming studies concerning to the impact of the environment over the infiltration patterns. We expect that this kind of novel research tools help in the promotion of standard cancer therapies optimization, particularly in the context of personalized medicine.
 
-<img src="in-silico.jpg" alt="Day 4 after invasion." width="300"/>
+<img src="in-silico.jpg" alt="Day 4 after invasion." width="350"/>
 
 
 # Scientific references
